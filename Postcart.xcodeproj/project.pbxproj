@@ -13,6 +13,8 @@
 		1AF75FD619F4265100E9F196 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF75FD519F4265100E9F196 /* Images.xcassets */; };
 		1AF75FD919F4265100E9F196 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF75FD719F4265100E9F196 /* LaunchScreen.xib */; };
 		1AF75FE519F4265200E9F196 /* PostcartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF75FE419F4265200E9F196 /* PostcartTests.swift */; };
+		1AF75FEF19F430AE00E9F196 /* Hands-reaching-out.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1AF75FEE19F430AE00E9F196 /* Hands-reaching-out.jpg */; };
+		1AF75FF119F445DE00E9F196 /* Seongsan Ilchulbong Peak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1AF75FF019F445DE00E9F196 /* Seongsan Ilchulbong Peak.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		1AF75FDE19F4265200E9F196 /* PostcartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostcartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF75FE319F4265200E9F196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AF75FE419F4265200E9F196 /* PostcartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcartTests.swift; sourceTree = "<group>"; };
+		1AF75FEE19F430AE00E9F196 /* Hands-reaching-out.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hands-reaching-out.jpg"; sourceTree = "<group>"; };
+		1AF75FF019F445DE00E9F196 /* Seongsan Ilchulbong Peak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seongsan Ilchulbong Peak.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		1AF75FCC19F4265100E9F196 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AF75FF019F445DE00E9F196 /* Seongsan Ilchulbong Peak.jpg */,
+				1AF75FEE19F430AE00E9F196 /* Hands-reaching-out.jpg */,
 				1AF75FCD19F4265100E9F196 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -194,6 +200,8 @@
 			files = (
 				1AF75FD419F4265100E9F196 /* Main.storyboard in Resources */,
 				1AF75FD919F4265100E9F196 /* LaunchScreen.xib in Resources */,
+				1AF75FF119F445DE00E9F196 /* Seongsan Ilchulbong Peak.jpg in Resources */,
+				1AF75FEF19F430AE00E9F196 /* Hands-reaching-out.jpg in Resources */,
 				1AF75FD619F4265100E9F196 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
