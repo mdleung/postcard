@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dCN-FN-tbV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dCN-FN-tbV">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sti-wG-zbF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Joe-tV-zrs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hands-reaching-out.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2FJ-ON-tXe">
@@ -71,6 +72,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="47" y="199" width="236" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="labelNameMail:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="dW1-yg-v0e"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cHd-2e-dni">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -94,6 +98,15 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OKS-cd-FRQ"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7LU-fT-a98">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="241" y="422" width="42" height="21"/>
+                                </variation>
+                            </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMX-H2-tP8">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -111,6 +124,7 @@
                                 <exclude reference="cFC-cu-F3b"/>
                                 <exclude reference="cHd-2e-dni"/>
                                 <exclude reference="N5H-uo-c6s"/>
+                                <exclude reference="7LU-fT-a98"/>
                                 <exclude reference="wMX-H2-tP8"/>
                             </mask>
                         </variation>
@@ -120,6 +134,7 @@
                                 <include reference="cFC-cu-F3b"/>
                                 <include reference="cHd-2e-dni"/>
                                 <include reference="N5H-uo-c6s"/>
+                                <include reference="7LU-fT-a98"/>
                                 <include reference="wMX-H2-tP8"/>
                             </mask>
                         </variation>
@@ -129,6 +144,7 @@
                         <outlet property="enterNameTextField" destination="cFC-cu-F3b" id="MxR-vI-sxs"/>
                         <outlet property="mailButton" destination="N5H-uo-c6s" id="dyt-ub-rdP"/>
                         <outlet property="messageLabel" destination="wMX-H2-tP8" id="nqn-ix-NOr"/>
+                        <outlet property="nameLabel" destination="7LU-fT-a98" id="qQs-Ax-mFv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var enterNameTextField: UITextField!
+    @IBOutlet weak var nameLabel: UILabel!
 
     @IBOutlet weak var enterMessageTextField: UITextField!
     
@@ -37,5 +38,10 @@ class ViewController: UIViewController {
         messageLabel.textColor = UIColor.redColor()
     }
 
+    @IBAction func labelNameMail(sender: AnyObject) {
+        nameLabel.hidden = false
+        nameLabel.text = enterNameTextField.text
+        
+    }
 }
 
